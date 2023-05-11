@@ -26,6 +26,7 @@ $hasil = json_decode($response, true);
 				<th>Quantity</th>
 			</tr>
 			<?php foreach($hasil as $barang) : ?>
+				//kalau line 30 sama 38 dihapus, programnya jalan tapi ga di seleksi yang awalan b
 				<?php if (str_starts_with($barang['g_code'],"B")):TRUE ?>
 					<tr>
 						<td><?= $barang['i_code'] ?></td>
